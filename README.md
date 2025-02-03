@@ -1,50 +1,63 @@
 # java_estudos
 
-User Story
+#CASO 1
 
-História de usuário contada do ponto de vista da equipe administrativa do instituto educacional. O serviço (endpoint) é exposto pelo instituto educacional para ser consumido por qualquer pessoa autorizada do instituto educacional que o solicite.
+É necessário criar os testes de unidade necessários para abranger o comportamento da camada StudentDAO e StudentRepository. Leve em conta vários cenários e "casos extremos" de cada comportamento.
 
-US-0001: Calcule a média de todas as notas obtidas por um aluno, levando em conta as disciplinas cursadas. Crie uma mensagem personalizada de acordo com a média.
+- [ ] Casos nulos, vazios e inválidos.
+- [ ] Adicionar um aluno.
+- [ ] Procurar um aluno por ID.
+- [ ] Modificar os dados de um aluno.
+- [ ] Excluir um aluno.
+- [ ] Listar todos os alunos.
 
+#CASO 2
 
-## studentName
+É necessário criar os testes de unidade necessários para cobrir o comportamento da camada de serviço ObtenerDiplomaService. Leve em conta vários cenários e "casos extremos" de cada comportamento.
 
-Obrigatorio
+- [ ]Casos nulos, vazios e inválidos.
+- [ ]Dados de saída idênticos aos dados de entrada.
+- [ ]Cálculo da média.
+- [ ]Legenda do diploma.
+- [ ]Mensagem de diploma com honras.
 
-O campo não pode estar vazio.
-O campo deve começar com uma letra maiúscula.
-Comprimento máximo de 50 caracteres.
-O nome do aluno não pode estar vazio.
-O nome do aluno deve começar com uma letra maiúscula.
-O comprimento do nome não pode exceder 50 caracteres.
+##Etapas de teste unitárias com Mocks
 
+Crie o mock IStudentDAO.
+Injete-o no ObtenerDiplomaService.
+Configure seu comportamento (configuração) com o método when.
+Execute o teste com um nome dos casos de borda e use os asserts correspondentes.
 
- ## subjects
-Obrigatorio
+#CASO 3
 
-Que a lista não esteja vazia.
-A lista não pode estar vazia.
+É necessário criar os testes de unidade necessários para cobrir o comportamento da camada de serviço do StudentService, mockeando com os repositórios.
 
+Etapas de teste unitárias com Mocks
 
-## name
+- [ ]Crie a simulação IStudentDAO.
+- [ ]Crie a simulação IStudentRepository.
+- [ ]Injete-os no StudentService.
+- [ ]Configure seu comportamento (configuração) com o método when.
+- [ ]Execute o teste com um nome dos casos de borda e use as afirmações correspondentes.
 
-Obrigatorio
+#CASO 4
 
-O campo não pode estar vazio.
-O campo deve começar com uma letra maiúscula.
-Comprimento máximo de 30 caracteres.
-O nome do assunto não pode estar vazio.
-O nome do assunto deve começar com uma letra maiúscula.
-O comprimento do nome não pode exceder 30 caracteres.
+Se requiere crear los tests unitarios necesarios para cubrir el comportamiento de la capa de controlador ObtenerDiplomaController, mockeando su dependencia con el servicio.
 
+Etapas de teste unitárias com Mocks
 
-## score
+- [ ]Crie o IObtenerDiplomaService simulado.
+- [ ]Injete-o no GetDiplomaController.
+- [ ]Configure seu comportamento (configuração) com o método when.
+- [ ]Execute o teste com um nome dos casos de borda e use as afirmações correspondentes.
 
-Obrigatorio
+#CASO 5
 
-O campo não está vazio
-Mínimo 0,0
-Máximo de 10-0
-A nota não pode ser vazia.
-A nota mínima é 0,0.
-A nota máxima é 10,0.
+É necessário criar os testes de unidade necessários para cobrir o comportamento da camada do controlador StudentController, mockeando sua dependência do serviço.
+
+Etapas de teste unitárias com Mocks
+
+ - [ ]Crie o mock IStudentService. 
+ - [ ]Injete-o no StudentController.
+ - [ ]Configure seu comportamento (configuração) com o método when.
+- [ ]Execute o teste com o nome dos casos de borda e use as afirmações correspondentes.
