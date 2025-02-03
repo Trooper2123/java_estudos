@@ -18,6 +18,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.projectlombok:lombok:1.18.20")
     implementation("org.springframework.boot:spring-boot-starter")
+    implementation ("org.hibernate.validator:hibernate-validatorÇ8.0.2.Final")
 
     runtimeOnly("org.springframework.boot:spring-boot-devtools")
 

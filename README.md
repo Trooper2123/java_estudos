@@ -17,10 +17,9 @@ Comprimento máximo de 50 caracteres.
 O nome do aluno não pode estar vazio.
 O nome do aluno deve começar com uma letra maiúscula.
 O comprimento do nome não pode exceder 50 caracteres.
-subjects
 
-## List<SubjectDTO>
 
+ ## subjects
 Obrigatorio
 
 Que a lista não esteja vazia.
