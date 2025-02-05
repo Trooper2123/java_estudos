@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 public class SubjectDTO {
 
     private static final int MAX_NAME_LENGTH = 30;
-    private static final String NAME_STARTS_WITH_CAPITAL_REGEX = "^[A-Z]"
+    private static final String NAME_STARTS_WITH_CAPITAL_REGEX = "^[A-Z]";
 
 
     @NotNull("O campo não pode estar vazio.")
