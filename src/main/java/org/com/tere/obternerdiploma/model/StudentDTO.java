@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.intellij.lang.annotations.Pattern;
 import org.jetbrains.annotations.NotNull;
-import org.springframework.boot.convert.DataSizeUnit;
 
 import java.util.List;
 
@@ -17,7 +16,6 @@ public class StudentDTO {
 
 
     @NotNull("O campo 'name' não pode estar vazio.")
-    @Pattern(value = NAME_STARTS_WITH_CAPITAL_REGEX)
     private String name;
 
     String message;
@@ -28,8 +26,8 @@ public class StudentDTO {
 
 
 
- private boolean ValidateName (String name,int minSize ) {
-     return (name.length() <= minSize) && (name.matches(NAME_STARTS_WITH_CAPITAL_REGEX));
+ private boolean ValidateName (String name ) {
+     return (name.length() <= MAX_NAME_LENGTH) && (name.matches(NAME_STARTS_WITH_CAPITAL_REGEX));
  }
 
 }
