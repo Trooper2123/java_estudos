@@ -1,7 +1,8 @@
 package org.com.tere.obternerdiploma.controller;
 
-import com.meli.obtenerdiploma.model.StudentDTO;
-import com.meli.obtenerdiploma.service.IObtenerDiplomaService;
+
+import org.com.tere.obternerdiploma.model.StudentDTO;
+import org.com.tere.obternerdiploma.service.IObtenerDiplomaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

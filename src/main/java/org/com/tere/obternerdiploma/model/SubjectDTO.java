@@ -4,19 +4,28 @@ import javax.management.MXBean;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.jetbrains.annotations.NotNull;
 
 @Getter
 @Setter
 public class SubjectDTO {
 
-    @Size(min = 10, max = 30, message = "Comprimento máximo de 30 caracteres.")
-    @NotNull(message = "O campo não pode estar vazio.")
-    @Pattern(regexp = "^[A-Z]", message = "O campo deve começar com uma letra maiúscula.")
+    private static final int MAX_NAME_LENGTH = 30;
+    private static final String NAME_STARTS_WITH_CAPITAL_REGEX = "^[A-Z]";
+
+
+    @NotNull("O campo não pode estar vazio.")
     String name;
 
-    
-    @Size(min = 0.0, max = 10.0, message = "Nota deve estar entre 0.0 e 10.0")
-    @NotNull(message = "A nota não pode ser vazia.")
+    @NotNull("A nota não pode ser vazia.")
     Double score;
+
+    private boolean ValidateName (String name) {
+        return (name.length() <= MAX_NAME_LENGTH) && (name.matches(NAME_STARTS_WITH_CAPITAL_REGEX));
+    }
+
+    private boolean ValidateScore (double score) {
+        return (score >= 0.0) && (score <= 10.0);
+    }
 }
 
