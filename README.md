@@ -15,11 +15,11 @@
 
 É necessário criar os testes de unidade necessários para cobrir o comportamento da camada de serviço ObtenerDiplomaService. Leve em conta vários cenários e "casos extremos" de cada comportamento.
 
-- [ ]Casos nulos, vazios e inválidos.
-- [ ]Dados de saída idênticos aos dados de entrada.
-- [ ]Cálculo da média.
-- [ ]Legenda do diploma.
-- [ ]Mensagem de diploma com honras.
+- [ ] Casos nulos, vazios e inválidos.
+- [ ] Dados de saída idênticos aos dados de entrada.
+- [ ] Cálculo da média.
+- [ ] Legenda do diploma.
+- [ ] Mensagem de diploma com honras.
 
 ##Etapas de teste unitárias com Mocks
 
@@ -34,11 +34,11 @@ Execute o teste com um nome dos casos de borda e use os asserts correspondentes.
 
 Etapas de teste unitárias com Mocks
 
-- [ ]Crie a simulação IStudentDAO.
-- [ ]Crie a simulação IStudentRepository.
-- [ ]Injete-os no StudentService.
-- [ ]Configure seu comportamento (configuração) com o método when.
-- [ ]Execute o teste com um nome dos casos de borda e use as afirmações correspondentes.
+- [ ] Crie a simulação IStudentDAO.
+- [ ] Crie a simulação IStudentRepository.
+- [ ] Injete-os no StudentService.
+- [ ] Configure seu comportamento (configuração) com o método when.
+- [ ] Execute o teste com um nome dos casos de borda e use as afirmações correspondentes.
 
 #CASO 4
 
@@ -46,10 +46,10 @@ Se requiere crear los tests unitarios necesarios para cubrir el comportamiento d
 
 Etapas de teste unitárias com Mocks
 
-- [ ]Crie o IObtenerDiplomaService simulado.
-- [ ]Injete-o no GetDiplomaController.
-- [ ]Configure seu comportamento (configuração) com o método when.
-- [ ]Execute o teste com um nome dos casos de borda e use as afirmações correspondentes.
+- [ ] Crie o IObtenerDiplomaService simulado.
+- [ ] Injete-o no GetDiplomaController.
+- [ ] Configure seu comportamento (configuração) com o método when.
+- [ ] Execute o teste com um nome dos casos de borda e use as afirmações correspondentes.
 
 #CASO 5
 
@@ -57,7 +57,7 @@ Etapas de teste unitárias com Mocks
 
 Etapas de teste unitárias com Mocks
 
- - [ ]Crie o mock IStudentService. 
- - [ ]Injete-o no StudentController.
- - [ ]Configure seu comportamento (configuração) com o método when.
-- [ ]Execute o teste com o nome dos casos de borda e use as afirmações correspondentes.
+ - [ ] Crie o mock IStudentService. 
+ - [ ] Injete-o no StudentController.
+ - [ ] Configure seu comportamento (configuração) com o método when.
+ - [ ] Execute o teste com o nome dos casos de borda e use as afirmações correspondentes.
